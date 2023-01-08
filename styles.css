@@ -92,7 +92,7 @@ img {
 
 /* ANIMATION */
 
-@keyframes slide {
+@keyframes slide-square {
     from {
        top: 0rem;
     }
@@ -102,7 +102,52 @@ img {
     } 
    to {
         top: 2rem;
+        transform: translateX(2.5rem);
+    } 
+}
+
+@keyframes slide-x {
+    from {
+       transform: translateX(0rem);
+       top: 0rem;
+    }
+    50% {
         transform: translateX(-2rem);
+        top: 0rem !important;
+    } 
+   to {
+        top: 2rem;
+        transform: translateX(-2.5rem);
+    } 
+}
+
+@keyframes slide-circle {
+    from {
+       transform: translateX(0rem);
+       bottom: 0rem;
+    }
+    50% {
+        transform: translateX(0rem);
+        bottom: 2rem !important;
+    } 
+   to {
+        bottom: 2rem;
+        transform: translateX(2rem);
+    } 
+}
+
+@keyframes slide-triangle {
+    from {
+       transform: translateX(0rem);
+       bottom: 0rem;
+    }
+    50% {
+        transform: translateX(2rem);
+        bottom: 2rem !important;
+    } 
+   to {
+        bottom: 2rem;
+        transform: translateX(7.25rem);
     } 
 }
 
@@ -113,7 +158,19 @@ img {
     min-width: 538px;
 }
 .shape-container:hover .square  {
-    animation: slide 1s cubic-bezier(1, 0, 0, 1) .5s infinite alternate;
+    animation: slide-square 1s cubic-bezier(1, 0, 0, 1) .5s infinite alternate;
+}
+
+.shape-container:hover .x  {
+    animation: slide-x 1s cubic-bezier(1, 0, 0, 1) .5s infinite alternate;
+}
+
+.shape-container:hover .circle  {
+    animation: slide-circle 1s cubic-bezier(1, 0, 0, 1) .5s infinite alternate;
+}
+
+.shape-container:hover .triangle  {
+    animation: slide-triangle 1s cubic-bezier(1, 0, 0, 1) .5s infinite alternate;
 }
 .shape-container:active .PS-shape  {
     animation-play-state: paused;
