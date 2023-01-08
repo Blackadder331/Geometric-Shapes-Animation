@@ -91,26 +91,26 @@ img {
 }
 
 .PS-shape:hover {
-    transform: translateY(-100px);
-    scale: 1.25;
+    /* transform: translateY(-100px);
+    scale: 1.25; */
 
-    /* animation: slideup;
+    animation: slideup;
     animation-duration: 2s;
-    animation-iteration-count: infinite; */
+    animation-iteration-count: infinite;
 }
 
 /* Keyfram animation disabled while broken */
 
-/* @keyframes slideup {
-  from {
+@keyframes slideup {
+  /* from {
      transform: translateY(0px);
   }
 
   to {
     transform: translateY(-100px);
-  }
+  } */
 
-    /* from {
+    from {
         margin-top: 50px;
     }
     50% {
@@ -120,10 +120,8 @@ img {
    to {
         margin-top: 100px;
         transform: translateX(-100px);
-    }  */
-
+    } 
 }
-
 
 /* 2x2 Formation */
 .shape-two-by-two-container{
