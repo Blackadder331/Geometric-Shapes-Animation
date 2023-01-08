@@ -86,42 +86,47 @@ img {
     height: 3.35rem;
     width: auto;
     padding: 0 .625rem 0 .625rem;
-    animation-duration: 2s ease;
-    animation-name: slideup;
+
 }
 
-.PS-shape:hover {
-    /* transform: translateY(-100px);
-    scale: 1.25; */
 
-    animation: slideup;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
+/* ANIMATION */
 
-/* Keyfram animation disabled while broken */
-
-@keyframes slideup {
-  /* from {
-     transform: translateY(0px);
-  }
-
-  to {
-    transform: translateY(-100px);
-  } */
-
+@keyframes slide {
     from {
-        margin-top: 50px;
+       top: 0rem;
     }
     50% {
-        margin-top: 150px !important;
-        transform: translateX(0px);
+        top: 3rem !important;
+        transform: translateX(0rem);
     } 
    to {
-        margin-top: 100px;
-        transform: translateX(-100px);
+        top: 2rem;
+        transform: translateX(-2rem);
     } 
 }
+
+.shape-container {
+    /* background: hotpink; */
+    height: 150px;
+    position: relative;
+    min-width: 538px;
+}
+.shape-container:hover .square  {
+    animation: slide 1s cubic-bezier(1, 0, 0, 1) .5s infinite alternate;
+}
+.shape-container:active .PS-shape  {
+    animation-play-state: paused;
+}
+.PS-shape {
+    position: relative;
+
+}
+
+/* END ANIMATION */
+
+
+
 
 /* 2x2 Formation */
 .shape-two-by-two-container{
@@ -190,3 +195,6 @@ img {
     }
 
 }
+
+
+/* TEST RANDOM */
