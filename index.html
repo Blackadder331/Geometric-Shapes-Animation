@@ -5,30 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- <h1>Test nav item animation</h1> -->
     <!-- <p>This is a test link <a href="https://sharp.studio">Click me</a></p> -->
     <nav>
         <div id="nav-items">
-        <div class="shape-container">
-            <div><img src="./images/PS-Triangle.svg" alt="△" class="PS-shape"></div>
-            <div><img src="./images/PS-Square.svg" alt="□" class="PS-shape"></div>
-            <div><img src="./images/PS-Circle.svg" alt="◯" class="PS-shape"></div>
-            <div><img src="./images/PS-X.svg" alt="×" class="PS-shape"></div>
-        </div>
+            <div id="shapes-in-line" class="shape-container">
+                <div><img src="./images/PS-Triangle.svg" alt="△" class="PS-shape"></div>
+                <div><img src="./images/PS-Square.svg" alt="□" class="PS-shape"></div>
+                <div><img src="./images/PS-Circle.svg" alt="◯" class="PS-shape"></div>
+                <div><img src="./images/PS-X.svg" alt="×" class="PS-shape"></div>
+            </div>
 
-        <div class="shape-two-by-two-container">
-            <div><img src="./images/Shapes-Inline-2x2.svg" alt="grid of shapes 2x2" class="PS-two-by-two"></div>
-        </div>
+            <div class="shape-two-by-two-container">
+                <div><img src="./images/Shapes-Inline-2x2.svg" alt="grid of shapes 2x2" class="PS-two-by-two"></div>
+            </div>
 
-        <div class="shape-cross-container">
-            <div><img src="./images/Shapes-Cross.svg" alt="grid of shapes 2x2" class="PS-cross"></div>
-        </div>
+            <!-- <div id="shapes-cross" class="shape-cross-container">
+                <div><img src="./images/Shapes-Cross.svg" alt="grid of shapes 2x2" class="PS-cross"></div>
+            </div> -->
+            <div id="shapes-cross" class="shape-cross-container">
+                <div class="top-row flex-row"><img src="./images/PS-Triangle.svg" alt="△" class="PS-shape"></div>
+                <div class="middle-row flex-row">
+                    <img src="./images/PS-Square.svg" alt="□" class="PS-shape">
+                    <div style="width:50.25px;"></div>
+                    <img src="./images/PS-Circle.svg" alt="◯" class="PS-shape">
+                </div>
+                <div class="bottom-row flex-row"><img src="./images/PS-X.svg" alt="×" class="PS-shape"></div>
+            </div>
         </div>
     </nav>
 
-    
+    <script src="script.js"></script>
 </body>
 </html>

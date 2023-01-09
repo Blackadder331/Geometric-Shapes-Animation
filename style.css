@@ -1,0 +1,115 @@
+/* CSS RESETS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
+
+* { 
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body { 
+    margin: 0; 
+    padding: 0; 
+    font-size: 15px; 
+    /* ^ 15px rem base number for type scaling*/
+    color: white;
+    background-color: #222222;
+}
+
+/* END CSS RESETS */
+
+/* No image drag */
+
+.PS-shape, .PS-two-by-two, .PS-cross {
+    cursor: pointer;
+}
+
+/* Shapes */
+.shape-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    background-color: #222222;
+}
+
+.PS-shape{
+    height: 3.35rem;
+    width: 70;
+    /* padding: 0 .625rem 0 .625rem; */
+}
+
+
+/* Keyfram animation disabled while broken */
+
+
+/* 2x2 Formation */
+.shape-two-by-two-container{
+    width: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.PS-two-by-two{
+    height: 11rem;
+
+}
+
+/* .PS-two-by-two:hover {
+    opacity: .9;
+    scale: 1.125;
+} */
+
+
+/* Cross Formation */
+.shape-cross-container{
+    width: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    cursor: pointer;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PS-cross {
+    height: 11rem;
+}
+
+/* .PS-cross:hover {
+    opacity: .9;
+    scale: 1.125;
+} */
+
+
+/* align nav items */
+#nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15vw 0 15vw;
+
+    /* Used for testing only */
+    height: 100vh;
+}
+
+@media screen and (max-width: 900px) {
+
+    /* Change to stack vertical on mobile */
+    #nav-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 15vw 0 15vw;
+    
+        /* Used for testing only */
+        height: 100vh;
+        /* Space between items, adjust for final */
+        gap: 15vh;
+    }
+
+}
