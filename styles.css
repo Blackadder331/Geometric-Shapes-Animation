@@ -199,9 +199,69 @@ img {
 }
 
 .PS-two-by-two:hover {
-    opacity: .9;
     scale: 1.125;
+    rotate: 45deg;
+    transition-duration: .4s;
+    transition-timing-function: cubic-bezier(1, 0, 0, 1);
+    
 }
+
+
+/* Solo shapes in lockup */
+
+
+
+/* .shape-two-by-two-container-solo .square2 {
+    top: 2rem;
+    transform: translateX(2.5rem);
+    transform-origin: top;
+}
+
+
+.shape-two-by-two-container-solo .x2 {
+    top: 2rem;
+    transform: translateX(-2.5rem);
+    transform-origin: top;
+}
+
+.shape-two-by-two-container-solo .circle2 {
+    bottom: 2rem;
+    transform: translateX(2rem);
+    transform-origin: top;
+}
+
+.shape-two-by-two-container-solo .triangle2 {
+    bottom: 2rem;
+    transform: translateX(7.25rem);
+    transform-origin: top;
+} */
+
+
+.shape-two-by-two-container-solo:hover .PS-shape {
+    rotate: -45deg;
+    transform-origin: center;
+    transition-duration: 1.15s;
+    transition-timing-function: cubic-bezier(1, 0, 0, 1);
+}
+
+.shape-two-by-two-container-solo:hover {
+    rotate: 45deg;
+    transform-origin: center;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(1, 0, 0, 1)
+    
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 6rem);
+    grid-template-rows: repeat(2, 6rem);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    
+}
+
+
 
 
 /* Cross Formation */
